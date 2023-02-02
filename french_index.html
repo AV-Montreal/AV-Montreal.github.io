@@ -2,6 +2,12 @@
 <html>
 <head>
 <style>
+p {
+	font-family: "Lato";
+}
+h1, h2, h3 {
+	font-family: "Montserrat";
+}
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -15,15 +21,91 @@
     width:100%;
     position:absolute;
 }
+.watch .player-img::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 7em;
+  color: #FFF;
+  opacity: 0.7;
+  content: "\f144";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: rgb(255, 255, 255);
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+.watch .player-img {
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	text-decoration-color: currentcolor;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+.watch .player-img img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.inner {
+	margin: 0 auto;
+	width: 75rem;
+	max-width: calc(100% - 6rem);
+	box-sizing: border-box;
+}
+.content {
+	margin-bottom: 2rem;
+	position: relative;
+	padding: 3rem;
+}
+.iframe-wrapper {
+position: relative;
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: inherit;
+}
 </style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <p style="text-align: center;">&nbsp;</p>
 <h3 style="text-align: center;"><strong><span style="color: #ff0000;"><span style="color: #3366ff;"><a style="color: #3366ff;" href="./index.html"><span style="text-decoration: underline;"><em>(Clic here for the english version)</em> </span></a></span><br /></span></strong></h3>
 <h1 style="text-align: center;"><strong><span style="color: #ff0000;">&nbsp;LES ANIMAUX ONT BESOIN DE VOUS.</span><br /></strong></h1>
-<div class="video-responsive">
-<p style="text-align: center;"><iframe src="https://www.youtube.com/embed/LQRAfJyEsko?start=1785?autoplay=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<div class="inner">
+	<div class="content">
+		<div class="iframe-wrapper watch">
+			
+			<!--<div id="age-confirm">
+				<p>This documentary contains violent scenes, please confirm you are 18 years of age or over.</p>
+				<a href="javascript:void()" id="age-confirm-yes">Yes, I am 18 or over</a>
+				<a href="javascript:void()" id="age-confirm-no">No, I'm under 18</a>
+			</div>
+			<script>
+				$('#age-confirm-yes').on('click', function(){
+					$('#age-confirm').hide();
+				});
+				$('#age-confirm-no').on('click', function(){
+					$('#age-confirm').html('<p>Unfortunately this film is not currently available to watch on our website for people under the age of 18.</p>');
+				});
+			</script>-->
+			
+			<!--<iframe width="100%" height="600" src="https://www.youtube.com/embed/LQRAfJyEsko?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+			<!--<iframe src="https://player.vimeo.com/video/278963435" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+			<a href="https://www.youtube.com/watch?v=LQRAfJyEsko" target="_blank" title="Watch Dominion on Youtube" class="player-img">
+				<img src="video-frame.jpg" alt="Dominion wide poster" />
+			</a>
+		</div>
+	</div>
 </div>
 <p style="text-align: center;"><em><span style="text-decoration: underline;"><strong>Dominion</strong></span> est un documentaire narré par l'acteur récompensé par un oscar pour le film "Le Joker" et activiste végane, Joaquin Phoenix. <span style="text-decoration: underline;"><strong>Vous pouvez le regarder gratuitement et <span style="color: #ff0000; text-decoration: underline;">voir ce que les industries ne veulent pas que vous voyez</span>.</strong></span></em></p>
 <p style="text-align: center;">&nbsp;</p>
